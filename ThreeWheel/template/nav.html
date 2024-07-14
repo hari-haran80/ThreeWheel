@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/universal.css">
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+</head>
+<body>
+    {% include 'cursor.html' %}
+    <div class="Nav-Container">
+        <div class="logo-div">
+            <a href=""><img src="{% static '/images/instagram.png' %}" class="logo-image" alt=""></a>
+            <i class="fa-solid fa-bars" id="buttonToggle"></i>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item "><a class="Nav-link" href="/Home">Home</a></li>
+                <li class="nav-item"><a class="Nav-link" href="/About">About</a></li>
+                <li class="nav-item"><a class="Nav-link" href="/Services">Services</a></li>
+                <li class="nav-item"><a class="Nav-link" href="/Inquiry">Inquiry</a></li>
+                <li class="nav-item"><a class="Nav-link" href="/Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="{% static 'JavaScript/nav.js' %}"></script>
+</body>
+</html>

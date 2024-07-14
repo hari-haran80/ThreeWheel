@@ -1,0 +1,120 @@
+.Inquiry-div{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+}
+.Enquiry-form{
+    margin-top: 13vh;
+    border-radius: 15px;
+    border: 1px solid darkorchid;
+    padding: 1rem;
+    width: 90%;
+    position: relative;
+    box-shadow:rgba(250, 248, 248, 0.17) 0px -23px 25px 0px inset, 
+            rgba(247, 245, 245, 0.15) 0px -36px 30px 0px inset, 
+            rgba(253, 252, 252, 0.1) 0px -79px 40px 0px inset, 
+            rgba(250, 249, 249, 0.06) 0px 2px 1px, 
+            rgba(251, 249, 249, 0.09) 0px 4px 2px, 
+            rgba(253, 251, 251, 0.09) 0px 8px 4px, 
+            rgba(254, 254, 254, 0.09) 0px 16px 8px,
+            rgba(252, 251, 251, 0.09) 0px 32px 16px;
+}
+.Inquiry-image{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+}
+.Enquiry-form h2{
+    text-align: center;
+    padding: 20px 0px;
+    border-radius:15px ;
+    border-bottom: 1px solid darkorchid;
+}
+.content-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.common-div{
+    margin-top: 2rem;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.inputs{
+    border: none;
+    border-bottom: 1px solid darkorchid;
+    background-color: black;
+    color: whitesmoke;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 7px 35px;
+    transition: all 0.3s ease-in-out;
+}
+.inputs:focus, .inputs:hover{
+    outline: none;
+    border-bottom: 1px solid aqua;
+}
+.inputs:focus .icons{
+    color: aqua;
+}
+.common-div:hover .icons {
+    color: aqua;
+}
+.common-div:focus-within .icons {
+    color: aqua;
+}
+.description-div{
+    width: 93%;
+    justify-content: center;
+}
+.btn-div{
+    width: 300px;
+}
+#submit{
+    font-weight: 900;
+    background-color: darkorchid;
+}
+#submit:hover{
+    background: linear-gradient(45deg , darkorchid, aqua  );
+    cursor: pointer;
+}
+.icons{
+    position: absolute;
+    top: 2.2rem;
+    color: gray;
+    left: 0.1rem;
+    padding: 5px 7px;
+    border-right: 1px solid darkorchid;
+}
+@media screen and (max-width : 700px){
+    .content-div{
+        display: block;
+    }
+    .Enquiry-form{
+        margin-top: 10vh;
+    }
+    .common-div{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width : 360px){
+    .Enquiry-form{
+        width: 100%;
+        border: none;
+    }
+}
+@media screen and (max-width:490px){
+    .Inquiry-image{
+        left: 2rem;
+    }
+}

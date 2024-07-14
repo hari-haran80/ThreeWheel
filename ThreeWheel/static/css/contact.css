@@ -1,0 +1,175 @@
+.contact-form-container{
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: whitesmoke;
+}
+.content-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.map-frame,
+.Contact-form{
+    width: 45%;
+    border-radius: 15px;
+}
+.Contact-form{
+    border: 1px solid darkorchid;
+    padding: 1.5rem;
+    position: relative;
+}
+.contact-image{
+    width: 30px;
+    height: 30px;
+    top: 2rem;
+    left: 4rem;
+    font-size: 1.5rem;
+    position: absolute;
+}
+.Contact-form h2{
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: 1px solid darkorchid;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.Names-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.Fname-div,
+.Lname-div{
+    position: relative;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.Email-div,
+.Message-div,
+.submit-div,
+.socialMedia-div{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.common-contact-input{
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid darkorchid;
+    margin-top: 15px;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    padding: 7px 35px;
+}
+.common-contact-input:focus, .common-contact-input:hover{
+    outline: none;
+    border-bottom: 1px solid aqua;
+}
+.submit-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Send-btn{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: darkorchid;
+    width: 300px;
+    transition: all 0.5s;
+    color: whitesmoke;
+    font-weight: 700;
+}
+.Send-btn:hover{
+    background: linear-gradient(45deg , darkorchid, aqua  );
+    cursor: pointer;
+}
+.socialMedia-div{
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+}
+.socialMedia-div a{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.fa-facebook,
+.fa-instagram,
+.fa-envelope{
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+.icon-common:hover .input-icons {
+    color: aqua;
+}
+.icon-common:focus-within .input-icons {
+    color: aqua;
+}
+.input-icons{
+    position: absolute;
+    top: 2.1rem;
+    padding: 5px;
+    left: 0.3rem;
+    border-right: 1px solid darkorchid;
+}
+.socialMedia-div a:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right, #bafe7b,#04bef2);
+}
+.socialMedia-div a:hover i{
+    font-size: 18px;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-instagram{
+    color: #E4405F;
+}
+.fa-envelope{
+    color: red;
+}
+@media screen and (max-width:768px){
+    .content-div{
+        display: block;
+        margin-top: 13vh;
+    }
+    .map-frame{
+        width: 100%;
+    }
+    .Contact-form{
+        margin-top: 2rem;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 354px){
+    .contact-image{
+        left: 2rem;
+    }
+    .socialMedia-div{
+        width: 100%;
+    }
+}

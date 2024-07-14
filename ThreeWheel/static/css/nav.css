@@ -1,0 +1,113 @@
+.Nav-Container{
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 13vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    cursor: auto !important;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.logo-div{
+    margin-left: 3rem;
+}
+.logo-image{
+    width: 50px;
+    height: 50px;
+}
+.fa-bars,
+.fa-x{
+    color: white;
+    font-size: 30px;
+    top: 1.5rem;
+    right: 2rem;
+    opacity: 0;
+    z-index: 5000;
+    cursor: pointer;
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+.nav{
+    width: 500px;
+    margin-right: 3rem;
+}
+.nav-list{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-item a{
+    cursor: pointer  !important;
+    padding: 10px 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.Nav-link:hover{
+    border-bottom: 1px solid aqua;
+    border-radius: 10px;
+    color: aqua;
+}
+.active{
+    color: aqua !important ;
+    border-radius: 10px;
+    border-bottom: 1px solid aqua;
+}
+@media screen and (max-width:652px){
+    .Nav-Container{
+        height: 10vh;
+    }
+    .nav{
+        margin-right: 1rem;
+    }
+    .logo-div{
+        margin-left: 1rem;
+    }
+}
+@media screen and (max-width:581px){
+    .fa-bars,
+    .fa-x{
+        opacity: 1;
+    }
+    .logo-div{
+        margin-left: 3rem;
+    }
+    .nav{
+        background-color:rgba(0, 0, 0, 0.8);
+        height: 89vh;
+        position: absolute;
+        top: 10vh;
+        right: -100%;
+        width: 100%;
+        z-index: 5000;
+        transition: right 0.5s ease-in-out;
+    }
+    .nav-list{
+        transition: all 0.5s ease-in-out;
+        background-color: black;
+        border-left: 1px solid rgba(128, 128, 128, 0.4);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom: 2px solid aqua;
+        border-top: 2px solid aqua;
+        width: 220px;
+        height: 89vh;
+        position: absolute;
+        display: block;
+        right: -100%;
+        transition: right 0.5s ease-in-out;
+    }
+    .nav-item{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
